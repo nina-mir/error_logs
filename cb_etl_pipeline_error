@@ -1,0 +1,301 @@
+<pre>root@12c5ee2d83d8:/mnt# python scripts/city_builder_etl_pipeline.py
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+/usr/local/lib/python3.6/dist-packages/dask/dataframe/utils.py:15: FutureWarning: pandas.util.testing is deprecated. Use the functions in the public API at pandas.testing instead.
+  import pandas.util.testing as tm
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:root:Logger initialized in src.common.utils with default settings
+INFO:city-builder-etl-pipeline:running city_builder_etl_pipeline with options:
+INFO:city-builder-etl-pipeline:download=False
+INFO:city-builder-etl-pipeline:skip_api_extracts=True
+INFO:city-builder-etl-pipeline:create_tract_config=True
+INFO:city-builder-etl-pipeline:extract_tract_geojsons=True
+INFO:city-builder-etl-pipeline:tract_neighborhoods=True
+INFO:city-builder-etl-pipeline:extract_neighborhood_data=False
+INFO:city-builder-etl-pipeline:create_acs5_config=True
+INFO:city-builder-etl-pipeline:extract_acs5=False
+INFO:city-builder-etl-pipeline:extract_walk_transit_score=False
+INFO:city-builder-etl-pipeline:compute_land_use_overlaps=False
+INFO:city-builder-etl-pipeline:transform_land_use=False
+INFO:city-builder-etl-pipeline:load_food_desert=True
+INFO:city-builder-etl-pipeline:upload=False
+INFO:city-builder-etl-pipeline:etl-regions
+writing
+INFO:city-builder-etl-pipeline:etl-tracts
+INFO:city-builder-etl-pipeline:updating neighborhood names
+INFO:city-builder-etl-pipeline:load-tracts
+INFO:city-builder-etl-pipeline:fixing pkey
+INFO:city-builder-etl-pipeline:removing tracts not on land
+INFO:city-builder-etl-pipeline:adding milan tracts
+INFO:oauth2client.client:Refreshing access_token
+INFO:city-builder-etl-pipeline:transform-acs5
+INFO:src.census_acs5.transform_acs5:Transforming People data
+INFO:src.census_acs5.transform_acs5:Saving People data locally
+INFO:src.census_acs5.transform_acs5:Transforming Education data
+INFO:src.census_acs5.transform_acs5:Saving Education data locally
+INFO:src.census_acs5.transform_acs5:Transforming Race data
+INFO:src.census_acs5.transform_acs5:Saving Race data locally
+INFO:src.census_acs5.transform_acs5:Transforming Demographics data
+INFO:src.census_acs5.transform_acs5:Saving Demographics data locally
+INFO:src.census_acs5.transform_acs5:Transforming Employment data
+INFO:src.census_acs5.transform_acs5:Saving Employment data locally
+INFO:src.census_acs5.transform_acs5:Transforming Income data
+INFO:src.census_acs5.transform_acs5:Saving Income data locally
+INFO:src.census_acs5.transform_acs5:Transforming Housing data
+INFO:src.census_acs5.transform_acs5:Saving Housing data locally
+INFO:src.census_acs5.transform_acs5:Transforming Plumbing data
+INFO:src.census_acs5.transform_acs5:Saving Plumbing data locally
+INFO:city-builder-etl-pipeline:load-acs5
+INFO:src.census_acs5.load_acs5:Reading transformed ACS5 file for group People
+INFO:src.census_acs5.load_acs5:Loading People data in database
+INFO:src.census_acs5.load_acs5:Reading transformed ACS5 file for group Education
+INFO:src.census_acs5.load_acs5:Loading Education data in database
+INFO:src.census_acs5.load_acs5:Reading transformed ACS5 file for group Race
+INFO:src.census_acs5.load_acs5:Loading Race data in database
+INFO:src.census_acs5.load_acs5:Reading transformed ACS5 file for group Demographics
+INFO:src.census_acs5.load_acs5:Loading Demographics data in database
+INFO:src.census_acs5.load_acs5:Reading transformed ACS5 file for group Employment
+INFO:src.census_acs5.load_acs5:Loading Employment data in database
+INFO:src.census_acs5.load_acs5:Reading transformed ACS5 file for group Income
+INFO:src.census_acs5.load_acs5:Loading Income data in database
+INFO:src.census_acs5.load_acs5:Reading transformed ACS5 file for group Housing
+INFO:src.census_acs5.load_acs5:Loading Housing data in database
+INFO:src.census_acs5.load_acs5:Reading transformed ACS5 file for group Plumbing
+INFO:src.census_acs5.load_acs5:Loading Plumbing data in database
+INFO:src.census_acs5.load_acs5:Transforming Density data
+INFO:src.census_acs5.load_acs5:Saving Density data locally
+INFO:src.census_acs5.load_acs5:Loading Density data in database
+INFO:src.census_acs5.load_acs5:Loading demo_buckets data in database
+INFO:city-builder-etl-pipeline:etl milan demo data
+/mnt/src/milan/real_estate/etl_real_estate.py:51: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[&quot;housing_type&quot;] = df[&quot;housing_type&quot;].replace(translations)
+/mnt/src/milan/real_estate/etl_real_estate.py:53: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[&quot;rent_min&quot;] = df[&quot;rent_min&quot;].str.replace(&quot;,&quot;, &quot;.&quot;).astype(float)
+/mnt/src/milan/real_estate/etl_real_estate.py:54: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[&quot;rent_max&quot;] = df[&quot;rent_max&quot;].str.replace(&quot;,&quot;, &quot;.&quot;).astype(float)
+(543, 14)
+88 85
+3
+{40, 34, 39}
+total time: 18.830328464508057
+INFO:city-builder-etl-pipeline:etl income &amp; incentives
+INFO:oauth2client.client:Refreshing access_token
+(33566, 4)
+/mnt/src/census_tract/etl_income_incentives.py:29: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_rest[&quot;msa_name&quot;] = [i.replace(&quot;nonmetro portion of&quot;, &quot;&quot;).strip().title() for i in df_rest[&quot;msa_name&quot;]]
+missing: 3392
+INFO:src.census_tract.etl_income_incentives:writing tracts to DB
+import time: 98.93511939048767
+total time: 102.69254469871521
+INFO:city-builder-etl-pipeline:load-walk-transit-score
+INFO:src.walk_score.load_walk_transit_score:Reading scores
+INFO:src.walk_score.load_walk_transit_score:Merging walk score and transit score
+INFO:src.walk_score.load_walk_transit_score:Getting tract ID
+INFO:city-builder-etl-pipeline:transform-load-reonomy-buildings
+INFO:src.reonomy.transform_national_buildings:Reading raw data from CSV.
+INFO:src.reonomy.transform_national_buildings:Converting census tract ids to our format
+INFO:src.reonomy.transform_national_buildings:Summing residential units
+INFO:src.reonomy.transform_national_buildings:Summing commercial sqft
+INFO:src.reonomy.transform_national_buildings:Summing market values
+INFO:src.reonomy.transform_national_buildings:Merging by census tract
+INFO:src.reonomy.transform_national_buildings:Writing transformed data to CSV.
+(26151, 3)
+INFO:city-builder-etl-pipeline:create tract classification table
+INFO:city-builder-etl-pipeline:transform and load tract similarities
+INFO:src.census_tract.similarities:writing to DB
+60.09260869026184
+time: 115.12590408325195
+INFO:city-builder-etl-pipeline:transform and load anchor institutions
+no new tracts
+INFO:root:transform US anchors: 0.015691041946411133
+no new tracts
+INFO:root:transform ITL anchors: 0.015043020248413086
+INFO:root:writing all 73013 tract ids
+INFO:root:Creating the master tracts
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Museums1.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Hospitals10-5.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Hospitals_inside_tract.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Hospitals4-4.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Libraries1.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Diplomatic Missions_inside_tract.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Hospitals5-6.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Education_inside_tract.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Corporate Headquarters and Prevalent Sectors_inside_tract.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Education1.csv
+INFO:root:These are the all mapped: anchor_tracts_all_mapped_Incubators and Accelerators_inside_tract.csv
+INFO:root:This is the shape of the master_tracts: (309708, 3)
+INFO:src.anchor_institutions.load_anchors:Writing anchor tracts
+tracts time: 27.850086212158203
+total time: 27.850107669830322
+total time: 62.312684297561646 seconds
+INFO:city-builder-etl-pipeline:load-food-desert
+INFO:src.food_desert.load_food_desert_data:Reading food access Excel file
+INFO:src.food_desert.load_food_desert_data:Loading food access data
+INFO:src.common.utils:Copying data to db table
+INFO:city-builder-etl-pipeline:etl socioeconomic data geos
+INFO:src.socioeconomic_geos.etl_socioeconomic_geos:loading into DB
+import data
+Traceback (most recent call last):
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/base.py&quot;, line 1193, in _execute_context
+    context)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/default.py&quot;, line 509, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.ProgrammingError: column cons.consrc does not exist
+LINE 4:                 cons.consrc as src
+                        ^
+HINT:  Perhaps you meant to reference the column &quot;cons.conkey&quot; or the column &quot;cons.conbin&quot;.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;scripts/city_builder_etl_pipeline.py&quot;, line 480, in &lt;module&gt;
+    city_builder_etl()
+  File &quot;/usr/local/lib/python3.6/dist-packages/click/core.py&quot;, line 764, in __call__
+    return self.main(*args, **kwargs)
+  File &quot;/usr/local/lib/python3.6/dist-packages/click/core.py&quot;, line 717, in main
+    rv = self.invoke(ctx)
+  File &quot;/usr/local/lib/python3.6/dist-packages/click/core.py&quot;, line 1114, in invoke
+    return Command.invoke(self, ctx)
+  File &quot;/usr/local/lib/python3.6/dist-packages/click/core.py&quot;, line 956, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File &quot;/usr/local/lib/python3.6/dist-packages/click/core.py&quot;, line 555, in invoke
+    return callback(*args, **kwargs)
+  File &quot;/usr/local/lib/python3.6/dist-packages/click/decorators.py&quot;, line 17, in new_func
+    return f(get_current_context(), *args, **kwargs)
+  File &quot;scripts/city_builder_etl_pipeline.py&quot;, line 400, in city_builder_etl
+    etl_income_milan.main()
+  File &quot;/mnt/src/milan/demographic/etl_income.py&quot;, line 21, in main
+    df_socio = pd.read_sql(&quot;socioeconomic_data_geos&quot;, engine)
+  File &quot;/usr/local/lib/python3.6/dist-packages/pandas/io/sql.py&quot;, line 422, in read_sql
+    pandas_sql.meta.reflect(only=[sql])
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/schema.py&quot;, line 3963, in reflect
+    Table(name, self, **reflect_opts)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/schema.py&quot;, line 457, in __new__
+    metadata._remove_table(name, schema)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/util/langhelpers.py&quot;, line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/util/compat.py&quot;, line 249, in reraise
+    raise value
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/schema.py&quot;, line 452, in __new__
+    table._init(name, metadata, *args, **kw)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/schema.py&quot;, line 534, in _init
+    include_columns, _extend_on=_extend_on)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/schema.py&quot;, line 547, in _autoload
+    _extend_on=_extend_on
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/base.py&quot;, line 1545, in run_callable
+    return callable_(self, *args, **kwargs)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/default.py&quot;, line 391, in reflecttable
+    table, include_columns, exclude_columns, **opts)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/reflection.py&quot;, line 633, in reflecttable
+    exclude_columns, _extend_on, reflection_options)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/reflection.py&quot;, line 761, in _reflect_fk
+    **reflection_options
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/schema.py&quot;, line 457, in __new__
+    metadata._remove_table(name, schema)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/util/langhelpers.py&quot;, line 66, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/util/compat.py&quot;, line 249, in reraise
+    raise value
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/schema.py&quot;, line 452, in __new__
+    table._init(name, metadata, *args, **kw)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/schema.py&quot;, line 534, in _init
+    include_columns, _extend_on=_extend_on)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/schema.py&quot;, line 547, in _autoload
+    _extend_on=_extend_on
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/base.py&quot;, line 1545, in run_callable
+    return callable_(self, *args, **kwargs)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/default.py&quot;, line 391, in reflecttable
+    table, include_columns, exclude_columns, **opts)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/reflection.py&quot;, line 645, in reflecttable
+    include_columns, exclude_columns, reflection_options)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/reflection.py&quot;, line 861, in _reflect_check_constraints
+    constraints = self.get_check_constraints(table_name, schema)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/reflection.py&quot;, line 553, in get_check_constraints
+    self.bind, table_name, schema, info_cache=self.info_cache, **kw)
+  File &quot;&lt;string&gt;&quot;, line 2, in get_check_constraints
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/reflection.py&quot;, line 54, in cache
+    ret = fn(self, con, *args, **kw)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/dialects/postgresql/base.py&quot;, line 3069, in get_check_constraints
+    c = connection.execute(sql.text(CHECK_SQL), table_oid=table_oid)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/base.py&quot;, line 948, in execute
+    return meth(self, multiparams, params)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/sql/elements.py&quot;, line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/base.py&quot;, line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/base.py&quot;, line 1200, in _execute_context
+    context)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/base.py&quot;, line 1413, in _handle_dbapi_exception
+    exc_info
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/util/compat.py&quot;, line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/util/compat.py&quot;, line 248, in reraise
+    raise value.with_traceback(tb)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/base.py&quot;, line 1193, in _execute_context
+    context)
+  File &quot;/usr/local/lib/python3.6/dist-packages/sqlalchemy/engine/default.py&quot;, line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.ProgrammingError) column cons.consrc does not exist
+LINE 4:                 cons.consrc as src
+                        ^
+HINT:  Perhaps you meant to reference the column &quot;cons.conkey&quot; or the column &quot;cons.conbin&quot;.
+ [SQL: &quot;\n            SELECT\n                cons.conname as name,\n                cons.consrc as src\n            FROM\n                pg_catalog.pg_constraint cons\n            WHERE\n                cons.conrelid = %(table_oid)s AND\n                cons.contype = &apos;c&apos;\n        &quot;] [parameters: {&apos;table_oid&apos;: 80148}] (Background on this error at: http://sqlalche.me/e/f405)
+root@12c5ee2d83d8:/mnt# 
+</pre>
