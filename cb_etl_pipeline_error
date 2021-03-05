@@ -1,4 +1,4 @@
-<pre>root@12c5ee2d83d8:/mnt# python scripts/city_builder_etl_pipeline.py
+root@12c5ee2d83d8:/mnt# python scripts/city_builder_etl_pipeline.py
 INFO:root:Logger initialized in src.common.utils with default settings
 INFO:root:Logger initialized in src.common.utils with default settings
 INFO:root:Logger initialized in src.common.utils with default settings
@@ -297,5 +297,4 @@ LINE 4:                 cons.consrc as src
                         ^
 HINT:  Perhaps you meant to reference the column &quot;cons.conkey&quot; or the column &quot;cons.conbin&quot;.
  [SQL: &quot;\n            SELECT\n                cons.conname as name,\n                cons.consrc as src\n            FROM\n                pg_catalog.pg_constraint cons\n            WHERE\n                cons.conrelid = %(table_oid)s AND\n                cons.contype = &apos;c&apos;\n        &quot;] [parameters: {&apos;table_oid&apos;: 80148}] (Background on this error at: http://sqlalche.me/e/f405)
-root@12c5ee2d83d8:/mnt# 
-</pre>
+root@12c5ee2d83d8:/mnt#
